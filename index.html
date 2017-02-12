@@ -1,24 +1,29 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>
 		Franco Simeone
 	</title>
-
 </head>
-
 <body>
-
-	<div class="container row">
-		<div class="logo ">
+	<div class="container">
+		<div class="logo">
 			<span class="left"><</span><span class="name">Franco Simeone</span><span class="right">/></span>
 			<div class="text">
 			<span class="word">Software</span><span class="web"> Engineer</span>
 		  	</div>
 		</div>
 	</div>
-
+	<div class="menu-container" style="width:100%">
+		<div class="menu-options">
+			<a href="https://github.com/francoSimeone"><img class="img-git" src="img/git.png"></a>
+			<a href="https://www.linkedin.com/in/franco-simeone-8b1096106"><img  class="img-linkedin" src="img/linkedin.png"></a>
+			<a href="mailto:fsimeone07@gmail.com"><img class="img-mail" src="img/mail.png"></a>	
+			<a href="#"><img class="img-info" src="img/info.png"></a>
+		</div>
+	</div>
 </body>
-
+ 
 <style type="text/css">
 	@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 body { 
@@ -78,66 +83,29 @@ body {
 .left {
   margin: 0 30px 0 0;
 }
-
+.menu-container img{
+	margin: 50px;
+	position: center;
+}
+.img-git:hover{
+	content: url("img/gitBlack.png");
+	cursor: pointer;
+}
+.img-linkedin:hover{
+	content: url("img/linkedinBlack.png");
+	cursor: pointer;
+}
+.img-mail:hover{
+	content: url("img/mailBlack.png");
+	cursor: pointer;
+}
+.img-info:hover{
+	content: url("img/infoBlack.png");
+	cursor: pointer;
+}
+.menu-options{
+	width: 100%;
+	text-align: center;
+}
 
 </style>
-<script type="text/javascript">
-	/*.right-inverted, .left-inverted {
-	font-family: arial;
-	font-size: 160px;
-	position: relative;
-	top: 55px;
-	color: #E6E9ED;
-	margin: 0 0 0 20px;
-}
-.left-inverted {
-  margin: 0 30px 0 0;
-}
-.logo-inverted{
-	font-weight: 400;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #3BAFDA;
-	font-size: 80px;
-	position: relative;
-	margin: 0;
-}
-.name{
-	cursor:pointer
-}
-.name-to-invert{
-	cursor:pointer
-}
-.word-inverted {
-  color: #E6E9ED;
-}
-
-
-
-	$(".name").click(function(){
-		alert("1");
-		$(".left").addClass("left-inverted");
-		$(".left").removeClass("left");
-		$(".right").addClass("right-inverted");
-		$(".right").removeClass("right");
-		$(".logo").addClass("logo-inverted");
-		$(".logo").removeClass("logo");
-		$(".word").addClass("word-inverted");
-		$(".word").removeClass("word");
-		$(".name").addClass("name-to-invert");
-		$(".name-to-invert").removeClass("name");
-	});
-
-	$(".name-to-invert").click(function(){
-		alert("2");
-		$(".left-inverted").addClass("left");
-		$(".left-inverted").removeClass("left-inverted");
-		$(".right-inverted").addClass("right");
-		$(".right-inverted").removeClass("right-inverted");
-		$(".logo-inverted").addClass("logo");
-		$(".logo-inverted").removeClass("logo-inverted");
-		$(".word-inverted").addClass("word");
-		$(".word-inverted").removeClass("word-inverted");
-		$(".name-to-invert").addClass("name");
-		$(".name").removeClass("name-to-invert");
-	});*/
-</script>
