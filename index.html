@@ -6,10 +6,10 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900,500' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
-
+<!--
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900,500' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+-->
 
 
 	<title>
@@ -48,7 +48,7 @@
 		<div id="color"></div>
 	</div>
 	<div id="profile">
-		<img class="imageProfile" src="img/FrancoCV.jpg" alt="User" />
+		<img class="imageProfile" src="img/FrancoCV.jpg" />
 		<h1>Franco Simeone</h1>
 		<p>Full Stack Developer</p>
 		<div class="info">
@@ -66,10 +66,11 @@
 					(01 February 2016 - 10 February 2017)
 				</span>
 			</p>
+			<p>
+				<i id="back-btn" class="fa fa-home fa-2x "></i></br>
+			</p>
 		</div>
 	</div>
-</div>
-
 
 </body>
  
@@ -346,6 +347,10 @@ a:hover {
 	animation-duration: 0.5s;
 }
 
+#back-btn:hover{
+	cursor: pointer;
+}
+
 @keyframes entrance-first {
 	0% {
 		top: 200px;
@@ -371,9 +376,9 @@ a:hover {
 	$('#card').hide();
 
 	$('.img-info').on('click',function(){
-		$('.menu-container').hide();
-		$('.container').hide();
-		$('#card').show();
+		$('.menu-container').slideToggle();
+		$('#card').slideToggle();
+		$('.container').slideToggle();
 	});
 
 	$(function() {
@@ -382,4 +387,9 @@ a:hover {
 		$(".info").toggleClass("active");
 	});
 });
+	$('#back-btn').on('click',function(){
+		$('.menu-container').slideToggle();
+		$('#card').slideToggle();
+		$('.container').slideToggle();
+	});
 </script>
