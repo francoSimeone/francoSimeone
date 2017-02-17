@@ -1,11 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 body { 
 	background: #434A54;
 	padding: 0;
 	margin: 5%; 
 	border: 0;
-	 overflow: hidden;
+	overflow: hidden;
 }
+
 .container {
 	width: 905px;
 	height: 405px;
@@ -15,53 +17,55 @@ body {
 }
 
 .logo {
-  font-weight: 400;
-  font-family: 'Lato', Calibri, Arial, sans-serif;
-  color: #E6E9ED;
-  font-size: 80px;
-  position: relative;
-  margin: 0;
-  cursor: initial
+	font-weight: 400;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #E6E9ED;
+	font-size: 80px;
+	position: relative;
+	margin: 0;
+	cursor: initial
 }
+
 .logo:hover  {
-  color: #3BAFDA;
-  cursor: initial
+	color: #3BAFDA;
+	cursor: initial
 }
-.logo:hover .word {
-  color: #E6E9ED;
-}
-.logo:hover .left {
-  color: #E6E9ED;
-}
+
+.logo:hover .word,
+.logo:hover .left,
 .logo:hover .right {
-  color: #E6E9ED;
+	color: #E6E9ED;
 }
+
 .word {
-  color: #3BAFDA;
+	color: #3BAFDA;
 }
 
 .right, .left {
-  font-family: arial;
-  font-size: 160px;
-  position: relative;
-  top: 55px;
-  color: #3BAFDA;
-  margin: 0 0 0 20px;
+	font-family: arial;
+	font-size: 160px;
+	position: relative;
+	top: 55px;
+	color: #3BAFDA;
+	margin: 0 0 0 20px;
 }
 
 .text {
-  font-size: 30px;
-  position: absolute;
-  top: 168px;
-  left: 214px;
+	font-size: 30px;
+	position: absolute;
+	top: 168px;
+	left: 214px;
 }
+
 .left {
-  margin: 0 30px 0 0;
+ 	margin: 0 30px 0 0;
 }
+
 .menu-container i{
 	margin: 30px ;
 	position: relative;
 }
+
 .img-git,
 .img-linkedin,
 .img-mail,
@@ -69,6 +73,7 @@ body {
 	color:#3BAFDA;
 	cursor: pointer;
 }
+
 .img-git:hover,
 .img-linkedin:hover,
 .img-mail:hover,
@@ -76,12 +81,12 @@ body {
 	color:black;
 	cursor: pointer;
 }
+
 .menu-options{
 	width: 100%;
 	text-align: center;
+	margin-top: 150px;
 }
-
-
 
 #card {
 	width: 600px;
@@ -166,6 +171,7 @@ a:hover {
 aptitudColor {
 	color:#3BAFDA;
 }
+
 .info {
 	text-align: center;
 	margin: 0 auto;
@@ -206,8 +212,8 @@ aptitudColor {
 
 .info.active .fa-info {
 	visibility: hidden;
- opacity: 0;
- transition: visibility 0s, opacity 0.4s ease;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.4s ease;
 }
 
 .info .fa-angle-down {
@@ -297,3 +303,4 @@ aptitudColor {
 		top: 144px;
 	}
 }
+
